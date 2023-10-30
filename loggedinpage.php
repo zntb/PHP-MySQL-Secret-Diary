@@ -10,4 +10,14 @@
     } else {
         header("Location: index.php");
     }
+
+    include("header.php");
+?>
+
+    <div class="container-fluid">
+        <textarea name="" id="diary" class="form-control" cols="30" rows="10"></textarea>
+    </div>
+
+<?php
+    include("footer.php");
 ?>
