@@ -90,13 +90,24 @@
 
 <?php include("header.php"); ?>
 
-    <div id="error"><?php echo $error; ?></div>
+    
 <div class="container" id="homePageContainer">
     <h1>Secret Diary</h1>
+    <p>Store your thoughts permanently and securely</p>
+
+    <div id="error">
+        <?php 
+        if($error != "") {
+            echo '<div class="alert alert-danger" role="alert">' .
+                $error . '</div>'; 
+        }         
+        ?>
+    </div>
+
 <!-- sign up form -->
     <form method="post" id="signUpForm">
-        <p>Intersted? Sign up now!</p>
-        <fieldset class="form-group">
+        <p class="fs-5">Intersted? Sign up now!</p>
+        <fieldset class="form-group mb-2">
             <input type="email" name="email" class="form-control" placeholder="Your email">
         </fieldset>
         <fieldset class="form-group">
@@ -116,8 +127,8 @@
 
     <!-- log in form -->
     <form method="post" id="logInForm">
-        <p>Log in using your username and password</p>
-        <fieldset class="form-group">
+        <p class="fs-5">Log in using your username and password</p>
+        <fieldset class="form-group mb-2">
             <input type="email" name="email" class="form-control" placeholder="Your email">
         </fieldset>
         <fieldset class="form-group">

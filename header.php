@@ -13,6 +13,7 @@
         html {
             background: url("diary.jpg") no-repeat center center fixed;
             background-size: cover;
+            /* height: 68.62rem; */
         }
 
         body {
@@ -21,7 +22,7 @@
         }
         .container {
             text-align: center;
-            width: 480px;
+            width: 30rem;
         }
 
         #logInForm {
@@ -39,7 +40,11 @@
         }
 
         #homePageContainer {
-            margin-top: 200px;
+            margin-top: 12.5rem;
+        }
+
+        .container-fluid {
+            height: 54rem;
         }
 
     </style>
